@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Daily - AI 智能科技日报</title>
+  <meta name="description" content="每日自动采集科技新闻，AI 智能生成中文摘要">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --text: #1a1a2e;
+      --text-secondary: #6c757d;
+      --border: #e9ecef;
+      --accent: #4361ee;
+      --accent-light: #e8ecff;
+      --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-hover: 0 4px 12px rgba(0,0,0,0.1);
+      --radius: 12px;
+      --max-width: 800px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0d1117;
+      --bg-secondary: #161b22;
+      --text: #e6edf3;
+      --text-secondary: #8b949e;
+      --border: #30363d;
+      --accent: #58a6ff;
+      --accent-light: #1a2332;
+      --shadow: 0 1px 3px rgba(0,0,0,0.3);
+      --shadow-hover: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* 阅读进度条 */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 3px;
+      background: linear-gradient(90deg, var(--accent), #a78bfa);
+      z-index: 100; transition: width 0.1s; width: 0%;
+    }
+
+    /* 头部 */
+    .header {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      background: rgba(var(--bg), 0.8);
+    }
+    .header-inner {
+      max-width: var(--max-width); margin: 0 auto;
+      padding: 12px 20px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo {
+      font-size: 18px; font-weight: 700;
+      text-decoration: none; color: var(--text);
+    }
+    .logo span { color: var(--accent); }
+
+    .header-actions { display: flex; gap: 8px; align-items: center; }
+    .theme-btn {
+      background: var(--bg-secondary); border: 1px solid var(--border);
+      color: var(--text); cursor: pointer; padding: 6px 10px;
+      border-radius: 8px; font-size: 14px;
+      transition: all 0.2s;
+    }
+    .theme-btn:hover { border-color: var(--accent); }
+
+    /* 主体 */
+    .container {
+      max-width: var(--max-width); margin: 0 auto;
+      padding: 24px 20px 60px;
+    }
+
+    /* 日期导航 */
+    .date-nav {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 24px; gap: 12px; flex-wrap: wrap;
+    }
+    .date-nav a {
+      color: var(--accent); text-decoration: none;
+      font-size: 14px; padding: 6px 12px;
+      border: 1px solid var(--border); border-radius: 8px;
+      transition: all 0.2s;
+    }
+    .date-nav a:hover { background: var(--accent-light); }
+
+    /* 日报标题 */
+    .daily-title {
+      font-size: 28px; font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--accent), #a78bfa);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .daily-meta {
+      color: var(--text-secondary); font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    /* 今日要点 */
+    .highlights {
+      background: var(--accent-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px; margin-bottom: 32px;
+    }
+    .highlights h2 { font-size: 18px; margin-bottom: 12px; }
+    .highlights ul { padding-left: 20px; }
+    .highlights li { margin-bottom: 8px; font-size: 15px; }
+
+    /* 分类 */
+    .category { margin-bottom: 32px; }
+    .category-title {
+      font-size: 20px; font-weight: 700;
+      margin-bottom: 16px; padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    /* 新闻卡片 */
+    .news-item {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px; margin-bottom: 12px;
+      transition: all 0.2s;
+    }
+    .news-item:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .news-item h3 {
+      font-size: 16px; font-weight: 600;
+      margin-bottom: 8px; line-height: 1.4;
+    }
+    .news-item h3 a {
+      color: var(--text); text-decoration: none;
+    }
+    .news-item h3 a:hover { color: var(--accent); }
+    .news-summary {
+      color: var(--text-secondary); font-size: 14px;
+      margin-bottom: 10px; line-height: 1.6;
+    }
+    .news-meta {
+      display: flex; gap: 12px; font-size: 12px;
+      color: var(--text-secondary); flex-wrap: wrap;
+    }
+    .news-meta a { color: var(--accent); text-decoration: none; }
+    .news-meta a:hover { text-decoration: underline; }
+    .news-source {
+      background: var(--bg); padding: 2px 8px;
+      border-radius: 4px; border: 1px solid var(--border);
+    }
+
+    /* 分隔线 */
+    hr {
+      border: none; border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    /* 页脚 */
+    .footer {
+      text-align: center; color: var(--text-secondary);
+      font-size: 13px; padding: 24px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    /* 回到顶部 */
+    #back-to-top {
+      position: fixed; bottom: 24px; right: 24px;
+      width: 40px; height: 40px;
+      background: var(--accent); color: white;
+      border: none; border-radius: 50%;
+      cursor: pointer; font-size: 18px;
+      box-shadow: var(--shadow-hover);
+      opacity: 0; transform: translateY(10px);
+      transition: all 0.3s;
+      z-index: 50;
+    }
+    #back-to-top.visible { opacity: 1; transform: translateY(0); }
+    #back-to-top:hover { transform: translateY(-2px); }
+
+    /* 索引页 */
+    .daily-list { list-style: none; }
+    .daily-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .daily-list a {
+      color: var(--text); text-decoration: none;
+      font-size: 16px; font-weight: 500;
+    }
+    .daily-list a:hover { color: var(--accent); }
+    .daily-list .count {
+      color: var(--text-secondary); font-size: 13px;
+      margin-left: 8px;
+    }
+
+    /* 响应式 */
+    @media (max-width: 640px) {
+      .daily-title { font-size: 22px; }
+      .container { padding: 16px 16px 40px; }
+      .date-nav { flex-direction: column; align-items: stretch; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <div id="progress-bar"></div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo">🤖 AI News <span>Daily</span></a>
+      <div class="header-actions">
+        <button class="theme-btn" id="theme-toggle" title="切换主题">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 内容由 JS 动态渲染 -->
+    <div id="app"></div>
+  </main>
+
+  <button id="back-to-top" title="回到顶部">↑</button>
+
+  <script>
+    // ==================== 路由 ====================
+    const app = document.getElementById('app');
+    const path = window.location.pathname;
+
+    // ==================== 主题切换 ====================
+    function initTheme() {
+      const saved = localStorage.getItem('theme') || 'dark';
+      document.body.setAttribute('data-theme', saved);
+    }
+
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const current = document.body.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.body.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // ==================== 进度条 ====================
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      document.getElementById('progress-bar').style.width = progress + '%';
+
+      const btn = document.getElementById('back-to-top');
+      if (scrollTop > 400) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+
+    document.getElementById('back-to-top').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ==================== Markdown 解析器 ====================
+    function parseMd(md) {
+      let html = md
+        // 标题
+        .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+        .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+        .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+        // 引用
+        .replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>')
+        // 分隔线
+        .replace(/^---$/gm, '<hr>')
+        // 链接
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+        // 粗体
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        // 斜体
+        .replace(/\*(.+?)\*/g, '<em>$1</em>')
+        // 列表项
+        .replace(/^- (.+)$/gm, '<li>$1</li>')
+        // 段落（非标签行）
+        .replace(/^(?!<[hblou]|<li|<hr|<strong|<em|<a |<\/)(.+)$/gm, '<p>$1</p>')
+        // 合并连续 blockquote
+        .replace(/<\/blockquote>\n<blockquote>/g, '<br>');
+
+      // 将连续 <li> 包裹在 <ul> 中
+      html = html.replace(/((?:<li>.*?<\/li>\n?)+)/g, '<ul>$1</ul>');
+      // 清理多余空行
+      html = html.replace(/\n{3,}/g, '\n\n');
+
+      return html;
+    }
+
+    // ==================== 日报内容渲染 ====================
+    async function loadDaily(dateStr) {
+      try {
+        const resp = await fetch(`daily/${dateStr}.md`);
+        if (!resp.ok) throw new Error('Not found');
+        const md = await resp.text();
+
+        // 解析 frontmatter
+        const fmMatch = md.match(/^---\n([\s\S]*?)\n---/);
+        const frontmatter = {};
+        if (fmMatch) {
+          fmMatch[1].split('\n').forEach(line => {
+            const [key, ...value] = line.split(': ');
+            if (key && value.length) frontmatter[key.trim()] = value.join(': ').trim();
+          });
+        }
+
+        const content = md.replace(/^---\n[\s\S]*?\n---\n*/, '');
+        const parsedContent = parseMd(content);
+
+        // 构建日期导航
+        const today = new Date();
+        const current = new Date(dateStr);
+        const prevDate = new Date(current); prevDate.setDate(prevDate.getDate() - 1);
+        const nextDate = new Date(current); nextDate.setDate(nextDate.getDate() + 1);
+        const formatDate = d => d.toISOString().split('T')[0];
+        const isToday = formatDate(today) === dateStr;
+
+        app.innerHTML = `
+          <div class="date-nav">
+            <a href="daily/${formatDate(prevDate)}.html">← 上一期</a>
+            <span style="font-size:14px;color:var(--text-secondary)">
+              ${frontmatter.date || dateStr} ${frontmatter.weekday || ''}
+            </span>
+            ${!isToday ? `<a href="daily/${formatDate(nextDate)}.html">下一期 →</a>` : '<span></span>'}
+          </div>
+          ${parsedContent}
+        `;
+
+        document.title = `${frontmatter.title || 'AI 日报'} | AI News Daily`;
+      } catch (error) {
+        app.innerHTML = `
+          <div style="text-align:center;padding:60px 20px;">
+            <h2 style="margin-bottom:12px;">📄 日报未找到</h2>
+            <p style="color:var(--text-secondary)">日期 ${dateStr} 的日报不存在</p>
+            <a href="/" style="color:var(--accent);margin-top:16px;display:inline-block;">← 返回首页</a>
+          </div>
+        `;
+      }
+    }
+
+    // ==================== 首页索引渲染 ====================
+    async function loadIndex() {
+      try {
+        const resp = await fetch('daily/index.json');
+        const files = await resp.json();
+
+        // 按日期降序
+        files.sort((a, b) => b.date.localeCompare(a.date));
+
+        const listHtml = files.length > 0
+          ? '<ul class="daily-list">' + files.map(f =>
+              `<li><a href="daily/${f.date}.html">${f.title}</a><span class="count">${f.count} 条</span></li>`
+            ).join('') + '</ul>'
+          : '<p style="color:var(--text-secondary);text-align:center;padding:40px;">暂无日报，请等待自动生成...</p>';
+
+        app.innerHTML = `
+          <h1 class="daily-title">🤖 AI News Daily</h1>
+          <p class="daily-meta" style="margin-bottom:8px;">每日自动采集科技新闻，AI 智能生成中文摘要</p>
+          <p class="daily-meta" style="margin-bottom:32px;">数据来源：Hacker News、GitHub Trending、TechCrunch、The Verge 等</p>
+          <hr>
+          <h2 style="font-size:18px;margin-bottom:16px;">📰 历史日报</h2>
+          ${listHtml}
+        `;
+
+        document.title = 'AI News Daily - AI 智能科技日报';
+      } catch {
+        app.innerHTML = `
+          <h1 class="daily-title">🤖 AI News Daily</h1>
+          <p class="daily-meta">每日自动采集科技新闻，AI 智能生成中文摘要</p>
+          <hr>
+          <p style="color:var(--text-secondary);text-align:center;padding:40px;">暂无日报，请等待自动生成...</p>
+        `;
+      }
+    }
+
+    // ==================== 启动 ====================
+    initTheme();
+
+    if (path.includes('/daily/') && path.endsWith('.html')) {
+      const dateStr = path.split('/').pop().replace('.html', '');
+      loadDaily(dateStr);
+    } else {
+      loadIndex();
+    }
+  </script>
+</body>
+</html>

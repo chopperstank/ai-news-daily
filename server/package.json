@@ -1,0 +1,21 @@
+{
+  "name": "ai-news-daily-server",
+  "version": "1.0.0",
+  "description": "AI News Daily 后端服务 - 接收 GitHub Actions 采集的新闻数据，写入 MySQL",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "verify": "node verify.js",
+    "verify:full": "node verify.js --full"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "mysql2": "^3.11.0",
+    "cors": "^2.8.5",
+    "helmet": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

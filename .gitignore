@@ -1,0 +1,9 @@
+# AI News Daily
+# 每日自动采集科技新闻并生成 AI 摘要的聚合器
+
+node_modules/
+site/daily/*.md
+!site/daily/.gitkeep
+.env
+*.log
+.DS_Store

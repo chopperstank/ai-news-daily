@@ -1,0 +1,24 @@
+{
+  "name": "ai-news-daily",
+  "version": "1.0.0",
+  "description": "AI 新闻聚合器 - 每日自动采集科技新闻并生成 AI 摘要",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "collect": "node src/index.js --collect-only",
+    "preview": "npx serve site -p 4000 --no-clipboard",
+    "list": "node scripts/list.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.15.0",
+    "cheerio": "^1.2.0",
+    "dayjs": "^1.11.20",
+    "dotenv": "^17.4.2",
+    "openai": "^6.34.0",
+    "rss-parser": "^3.13.0"
+  }
+}

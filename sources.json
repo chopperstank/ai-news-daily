@@ -1,0 +1,100 @@
+{
+  "sources": [
+    {
+      "name": "Hacker News",
+      "type": "api",
+      "url": "https://hacker-news.firebaseio.com/v0",
+      "category": "AI/ML",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "name": "36Kr AI",
+      "type": "rss",
+      "url": "https://36kr.com/feed",
+      "category": "AI产品",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "name": "InfoQ AI",
+      "type": "rss",
+      "url": "https://www.infoq.cn/feed",
+      "category": "开发工具",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "name": "GitHub Trending",
+      "type": "crawler",
+      "url": "https://github.com/trending",
+      "category": "开源",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "name": "Dev.to",
+      "type": "rss",
+      "url": "https://dev.to/feed",
+      "category": "AI编程",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "name": "Hashnode",
+      "type": "rss",
+      "url": "https://hashnode.com/rss.xml",
+      "category": "开发工具",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "name": "TechCrunch",
+      "type": "rss",
+      "url": "https://techcrunch.com/feed/",
+      "category": "AI产品",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "name": "The Verge",
+      "type": "rss",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "category": "AI产品",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "name": "Ars Technica",
+      "type": "rss",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "category": "AI/ML",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "name": "GitHub Blog",
+      "type": "rss",
+      "url": "https://github.blog/feed/",
+      "category": "开源",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "name": "Cloudflare Blog",
+      "type": "rss",
+      "url": "https://blog.cloudflare.com/rss/",
+      "category": "云计算",
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "name": "AWS Blog",
+      "type": "rss",
+      "url": "https://aws.amazon.com/blogs/aws/feed/",
+      "category": "云计算",
+      "enabled": true,
+      "priority": 2
+    }
+  ]
+}

@@ -1,0 +1,903 @@
+[
+  {
+    "title": "Servo is now available on crates.io",
+    "link": "https://servo.org/blog/2026/04/13/servo-0.1.0-release/",
+    "description": "Servo is now available on crates.io",
+    "pubDate": "2026-04-13T12:12:22.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 91
+  },
+  {
+    "title": "All elementary functions from a single binary operator",
+    "link": "https://arxiv.org/abs/2603.21852",
+    "description": "All elementary functions from a single binary operator",
+    "pubDate": "2026-04-13T01:49:32.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 610
+  },
+  {
+    "title": "Android now stops you sharing your location in photos",
+    "link": "https://shkspr.mobi/blog/2026/04/android-now-stops-you-sharing-your-location-in-photos/",
+    "description": "Android now stops you sharing your location in photos",
+    "pubDate": "2026-04-13T11:48:15.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 177
+  },
+  {
+    "title": "I went to America's worst national parks so you don't have to",
+    "link": "https://substack.com/home/post/p-193626949",
+    "description": "I went to America's worst national parks so you don't have to",
+    "pubDate": "2026-04-13T12:29:35.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 152
+  },
+  {
+    "title": "The economics of software teams: Why most engineering orgs are flying blind",
+    "link": "https://www.viktorcessan.com/the-economics-of-software-teams/",
+    "description": "The economics of software teams: Why most engineering orgs are flying blind",
+    "pubDate": "2026-04-13T05:45:32.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 283
+  },
+  {
+    "title": "US appeals court declares 158-year-old home distilling ban unconstitutional",
+    "link": "https://nypost.com/2026/04/11/us-news/us-appeals-court-declares-158-year-old-home-distilling-ban-unconstitutional/",
+    "description": "US appeals court declares 158-year-old home distilling ban unconstitutional",
+    "pubDate": "2026-04-13T13:37:33.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 49
+  },
+  {
+    "title": "Michigan 'digital age' bills pulled after privacy concerns raised",
+    "link": "https://www.thecentersquare.com/michigan/article_7ca4e268-4a68-42fb-9042-f9d8604ebd7f.html",
+    "description": "Michigan 'digital age' bills pulled after privacy concerns raised",
+    "pubDate": "2026-04-13T12:05:35.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 67
+  },
+  {
+    "title": "Mark Zuckerberg is reportedly building an AI clone to replace him in meetings",
+    "link": "https://www.theverge.com/tech/910990/meta-ceo-mark-zuckerberg-ai-clone",
+    "description": "Mark Zuckerberg is reportedly building an AI clone to replace him in meetings",
+    "pubDate": "2026-04-13T14:21:29.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 11
+  },
+  {
+    "title": "AI could be the end of the digital wave, not the next big thing",
+    "link": "https://thenextwavefutures.wordpress.com/2026/04/07/ai-end-digital-wave-technology-innovation-perez/",
+    "description": "AI could be the end of the digital wave, not the next big thing",
+    "pubDate": "2026-04-13T12:29:39.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 127
+  },
+  {
+    "title": "Taking on CUDA with ROCm: 'One Step After Another'",
+    "link": "https://www.eetimes.com/taking-on-cuda-with-rocm-one-step-after-another/",
+    "description": "Taking on CUDA with ROCm: 'One Step After Another'",
+    "pubDate": "2026-04-12T22:38:45.000Z",
+    "source": "Hacker News",
+    "category": "AI/ML",
+    "type": "api",
+    "score": 218
+  },
+  {
+    "title": "图速科技发布三款新品：其具身打磨机器人全栈自研，打磨效率为人工3-4倍丨最前线",
+    "link": "https://36kr.com/p/3765207394009602?f=rss",
+    "description": "作者丨欧雪\n编辑丨袁斯来\n在AI+制造 新时代到来的开局之年，工业打磨这一长期依赖人工经验的“隐形工序”，正在迎来技术拐点。\n4月10日，图速自动化科技（上海）有限公司正式发布砺眸®LumiSander具身智能平台与图御™|RouteMind 2.0在线路径规划系统，同步亮相的还有图匠® LumiCraft具身打磨机器人。\n三款新品同时推出，标志着这家成立十年的自动化企业正加速向具身智能表面处理技术平台转型。\n打磨是工业生产中的极为关键的工艺环节，下游应用广泛。硬氪了解到，工业打磨广泛应用于轨道交通、航空航天、风力发电、汽车制造等领域。长期以来，打磨环节工艺高度依赖经验，劳动强度大、作业环境恶劣。\n图速科技创始人葛旭刚在发布会现场表示，当前AI在工业中的应用，更多是为工业机器人带来优化升级，远未达到“自主智能”的成熟状态。\n葛旭刚认为，“目前具身智能打磨处于‘条件智能打磨阶段’，本质上是集成AI模型进行辅助优化的条件交互阶段，实现参数自优化与人工协作，即AI辅助决策。”\n这一判断为图速的技术路径提供了注脚。砺眸®LumiSander平台并非试图完全替代人工经验，而是通过数据、算法与模型",
+    "pubDate": "2026-04-13 20:07:37  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "氪星晚报｜“马斯克版微信”或在本周五上线；Meta押注AI数字人，正打造AI版扎克伯格；AI潮玩品牌“MOMOTOY”完成数千万元融资",
+    "link": "https://36kr.com/p/3765146768376326?f=rss",
+    "description": "大公司：\n金山办公：一季度净利同比预增402%-473%\n36氪获悉，金山办公公告，预计2026年第一季度实现归属于上市公司股东的净利润20.22亿元-23.07亿元，同比增长401.89%-472.81%。\n沪电股份：一季度净利同比预增54.76%-65.25%\n36氪获悉，沪电股份公告，预计2026年第一季度归属于上市公司股东的净利润为11.8亿元-12.6亿元，比上年同期增长54.76%-65.25%。\nMeta押注AI数字人，正打造AI版扎克伯格\nMeta正在打造人工智能版马克・扎克伯格，可代他与员工互动，这是这家科技巨头全面向AI转型的重要举措之一。据四位知情人士透露，这家市值1.6万亿美元的集团一直在研发照片级逼真、可实时交互的AI 3D数字人。其中三位人士称，公司近期已将AI版扎克伯格列为优先项目。（新浪财经）\n小红书跨境电商平台Redshop将于今年6月正式上线\n4月13日上午消息，今日，接近小红书的相关人士向媒体透露，其跨境电商平台Redshop将于2026年6月正式上线，标志着小红书从“商家出海”的测试阶段，全面迈入“平台出海”的战略新阶段，进一步完善其全球化商业布",
+    "pubDate": "2026-04-13 19:09:12  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "野人先生崔渐为：“网红”标签对我们不公平丨厚雪专访",
+    "link": "https://36kr.com/p/3765076875117314?f=rss",
+    "description": "作者 | 钟艺璇\n编辑 | 乔芊\n如果你在一个意大利人面前，把Gelato等同于ice cream，他一定会难过。\n16世纪，Gelato诞生于文艺复兴时期的佛罗伦萨，传说中一名炼金术师创造了它。在意大利语中，Gelato本就译为冰淇淋。但它和美式冰淇淋ice cream口感大有不同，Gelato使用口感更密实，也更新鲜、低脂和健康。\n目前中国冰淇淋市场中，夫妻老婆店冷柜里卖的预制冰淇淋占据75%以上的市场份额，这个品类中的高端玩家是哈根达斯。现制冰淇淋只占约25%，以DQ、波比冰淇淋（原波比艾斯）乃至蜜雪冰城为代表的软冰（Soft Serve）以规模化优势，又占其半壁江山，Gelato由于手工现制、定位高端以及门店成本高，市场份额只有6%左右。\n在欧洲，数百年来，Gelato都以家族传承、百年老店的形式分散存在——意大利4万家Gelato几乎都是小店，甚至只要10家连锁以上，就能称作大品牌。\n但在中国，有一家公司却想把堪称“小众”的Gelato连锁化，它就是野人先生。\n2025年，野人先生突然涌现在大众面前，从300多家到突破千店，这也是它爆发式增长的一年。但创始人崔渐为却说，自己创",
+    "pubDate": "2026-04-13 17:58:36  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "包容 探索 求真 守正｜2026光幕计划终审阵容与年度面孔公布",
+    "link": "https://36kr.com/p/3764886161048323?f=rss",
+    "description": "当短剧成为当下备受关注的叙事形态，当AI不断拓展表达的边界，表演这门古老的艺术，也站在了新的岔路口。效率与流量构筑了可见的赛道，而真正的叩问始终沉在深处：在技术的“巧”与媒介的“快”之外，那些源于血肉之躯的、笨拙而恳切的“真”，是否依然拥有抵达人心的力量？\n辨识这份真实，需要深耕岁月、敬畏专业的目光。为此，我们荣幸地邀请到李少红导演担任第十六届北京国际电影节BE SEEN 光幕计划终评审主席，赵小丁、吴刚、俞白眉、魏钦涛担任终审评委。他们以多年的创作生命为标尺，为这份最终的年度面孔入选演员名单注入了厚重的公信力与深远的期待。\n“表演有无数个高山要翻跃。”终审现场，评委俞白眉的这句话，道出了在场者的共同感受。在为期两天的评审中，来自戏剧、影视、短剧等不同背景的青年演员相继登场，他们的创作在评委面前展开了一场坦诚而多元的时代对话。李少红导演不断追问演员是否“走心”，吴刚则反复强调，无论在何种媒介与赛道中，“真听、真看、真判断”永远是表演不可撼动的根基。评审的意义，正是以专业的目光，聚拢并辨认那些真正将表演视为志业的跋涉者，既尊重市场的选择，也尊重专业的信念。\n2026年，556位青年演员用",
+    "pubDate": "2026-04-13 14:59:19  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "这届留学生，用AI看病省出一辆特斯拉",
+    "link": "https://36kr.com/p/3764892434711049?f=rss",
+    "description": "01. 用AI硬扛20天，省出一辆特斯拉\n回国做完四颗牙的根管治疗后，英国留学生土土盯着一万多的账单算了算，发现自己回国这一趟，竟然省下了一辆二手“特斯拉”。\n就在20天前，土土的牙痛又犯了，连吃饭都变成了一种酷刑。他迫切需要找点缓解的办法，但脑海里闪过之前在国外的看牙经历——\n之前一次，同样是牙疼，土土挂了当地的一家私人医院的牙医号。一套检查下来，医生给出的治疗方案是根管治疗，要先磨牙、清洗，价格1900磅，还要做牙冠，1500磅，再加上4、500磅的手术费，治一颗牙至少要花4000磅，折合人民币近40000块。花了天价不说，效果也一言难尽。治完没多久，土土的牙冠就掉了，技术完全不值这个价。\n“这钱花得太憋屈了。”土土决定，这次回国治疗。但距离回国还有20天，怎么熬？他拿出手机，打开蚂蚁阿福问，“怎么能在不做根管的情况下，坚持一段时间到回国？”\n很快，阿福给出了一套缓解方案：冷敷，盐水漱口，并辅助服用些止痛药。土土就靠着这些办法撑了20天，一放假，他就坐上航班，直奔国内的公立医院，用1万多的价格，一口气做了4颗牙的根管。\n他算了笔账。如果在国外，这四颗牙至少要16000磅，“省下的这",
+    "pubDate": "2026-04-13 14:50:56  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "对话雅诗兰黛集团总裁兼CEO司泰峰：让一家公司变得更敏捷，这是他的第一年｜New Look专访",
+    "link": "https://36kr.com/p/3756542711120640?f=rss",
+    "description": "文｜贺哲馨\n编辑｜乔芊\n从外表看，司泰峰（Stéphane de La Faverie）并不是那类锋芒毕露的“改革派”。\n他多数时候带着温和的笑意，步伐与语速都偏慢——或许带着一点法国人特有的松弛感。你也很难想象，在成为父亲之前，司泰峰是“狂热的风帆冲浪和跳伞爱好者”。\n当下消费环境的惊险程度可能不亚于任何冒险运动。但在日前与36氪的专访中，司泰峰展现出一种从容：“我们是一家80年历史的公司，30多年前就进入中国市场，波动对我们来说不是什么新鲜事，我们的应对思路始终是一个——尽可能贴近消费者。”\n“而且你知道吗，”他接着说，“雅诗兰黛是第一个用中国人作为广告模特的外国美妆品牌。”这句话透露的言外之意是——在市场直觉和动作上，这家公司一向走在前面。\n司泰峰所有履历都与美妆有关，在2011年加入雅诗兰黛集团之后，从品牌总经理一路做到全球执行总裁。2025年1月，他接替傅懿德 (Fabrizio Freda），正式成为雅诗兰黛集团总裁兼首席执行官。\n\n雅诗兰黛集团总裁兼首席执行官司泰峰\n这份新职位几乎没有过渡期。上任仅一个月，司泰峰就提出了一项重大改革：雅诗兰黛集团将区域数量整合为四个，以及",
+    "pubDate": "2026-04-13 13:19:17  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "早期项目 | 前大疆工程师创业陪伴机器人，李泽湘连投三轮，产品即将登陆众筹",
+    "link": "https://36kr.com/p/3764777930621705?f=rss",
+    "description": "作者 | 乔钰杰\n编辑 | 袁斯来\n陪伴机器人走向同质化的当下，什么样的产品能吸引人？\n今年年初的CES 2026上，一款身着橙色连体衣的小型机器人COCOMO，意外成为外媒镜头频频捕捉的对象。\n略带“异质感”的外星宠物气质，37度接近人体的温度，创新的分体式设计既可被抱起，又能主动跟随，吸引了不少现场观众在展台前试玩体验。\n同一展台上，团队还带来了另一款更轻量的桌面陪伴机器人INU。INU被定义为一款“桌面外星小狗”，通过尾巴摇摆和身体扭动作出反馈，是一个为工作环境打造的更小、更固定的桌面伴侣。\n这两款产品，均来自陪伴机器人公司Ludens AI。\nLudens AI的创始人薛立君，曾任特斯拉和大疆工程师，后加入FITURE创始团队并负责AI体系搭建。“但机器人一直是我的兴趣所在”薛立君在与硬氪的采访中说道。\n硬氪获悉，目前，Ludens AI已完成两轮融资，天使轮由线性资本领投、清水湾基金跟投，天使+轮则由日本PKSHA Algorithm Fund和清水湾基金共同参投，两轮融资金额达数千万元。\n在CES现场，不少观众通过COCOMO与INU，直观感受到了机器人从“功能型”走向“关",
+    "pubDate": "2026-04-13 12:53:44  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "创业老炮vs00后，谁是下一代“一人公司”的标准样板",
+    "link": "https://36kr.com/p/3764728843289089?f=rss",
+    "description": "文｜富充\n编辑｜苏建勋\n2026年春天，“龙虾”火热异常，也直接带火了另一个概念：OPC（One Person Company，一人公司）。\n一人公司的概念最早源于2013年英国公司法，原指法律意义上的“一人有限责任公司”。在AI浪潮下，它被重新定义，演变为一种个人或极小型团队，借助AI工具，即可实现全链路闭环的新型创业模式。\n越来越多的商业领袖为OPC概念站台。周鸿祎说，一人公司是 AI 时代“超级个体”的极端形态。本质是1个人指挥N个AI智能体，人做决策、AI 做执行。美图创始人吴欣鸿则在内部设立专项基金，鼓励10人以下的小团队申请，同时美图也推出新产品Meitu CLI，明确喊出要让“一人公司和初创团队”也能像专业团队一样调用影像能力。\n从创业圈到成熟企业，AI工具正在重塑产品开发的最小单元，其带来的效率杠杆，在OPC群体中尤为凸显。\n一人创业加速社区鸿鹄汇Honghub近日发布《2026一人公司洞察报告·重力、杠杆与进化》，首次提出面向一人公司OPC的AI效能评估指标HACR（Human-AI Cost Ratio，人机成本比），并发布中国市场2026年基准值：一人公司每投入1",
+    "pubDate": "2026-04-13 12:06:46  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "估值 2.5 亿，成立 4 个月，潮玩中的爱马仕 「MOMOTOY」获数千万元融资",
+    "link": "https://36kr.com/p/3756978314511110?f=rss",
+    "description": "资本市场对潮玩的关注一直未曾退却。\n近日，36氪获悉，AI潮玩品牌「MOMOTOY」已完成数千万元融资，由翼朴基金投资，投后估值2.5亿。\n成立仅4个月，MOMOTOY以999足金盲盒+AI情感交互为核心特色，走出高奢化与科技化并行的差异化路径。品牌负责人透露，本轮融资资金，会重点投向AI技术迭代、高端产品矩阵落地、全球渠道拓展及核心商圈旗舰店铺设四大核心领域。\n行业数据显示，2025年中国潮玩市场规模已达879.7亿元，同比增长21%，首次超越传统玩具市场规模，预计2026年将突破1100亿元，年均增速保持在20%以上。\n在这样一个千亿级赛道持续扩容、资本热度不减的背景下，「MOMOTOY 」基于技术突破、IP、渠道、供应链、团队五大核心壁垒，3个月营收增长超200%。品牌全渠道签约金额已达6450万元，进驻400+潮玩门店，产品覆盖全球10000+线下门店，并与苹果等科技头部品牌达成深度战略合作。\n据悉，MOMOTOY已搭建成熟的供应链体系，多条PVC生产线及弹性产能可应对大规模订单需求；设计团队则以95后、00后为主力，成员多来自清华美院、中央圣马丁等顶尖院校。\n\nMOMOTOY",
+    "pubDate": "2026-04-13 10:42:29  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "36氪首发｜港中文博士和前大疆智能制造负责人创业，要做AI时代的“个性化乐高”",
+    "link": "https://36kr.com/p/3763919765226240?f=rss",
+    "description": "作者 | 张子怡\n编辑 | 袁斯来\n36氪获悉，个性化制造品牌UNICUS（原方仔照相馆，深圳千帜科技有限公司）于近日完成新一轮融资。融资金额达数百万美金。本轮由线性资本领投，九坤创投、天际资本跟投，元一资本担任独家财务顾问。公司创始团队及Maker赛道头部公司创始人以个人身份参与跟投。\n本轮资金将主要用于积木生成大模型训练、AI Agent的研发以及海外市场的拓展，持续构建“AI驱动的个性化制造”核心能力体系。\n过去两年，生成式AI的爆发大多集中在数字世界，而UNICUS选择让AI走进物理工厂。基于自研的全自动化设计及生产系统，UNICUS率先探索出一套由技术驱动的定制化玩具规模量产路径。\n长期以来，全球积木市场由乐高（LEGO）等巨头主导，年营收规模已达700亿元。然而，传统积木本质上是“IP驱动的标准化工业”，无论是迪士尼城堡还是星球大战系列，用户购买的是既定框架内的文化符号。\n在UNICUS创始人兼CEO徐豪看来，每个人生命中的高光时刻、难忘回忆，以及与家人和宠物相伴的珍贵瞬间，才是最真实、也最独特的“个人IP”。\n\n（图源/企业）\n只是，在定制化行业存在着悖论：个性化意味着“",
+    "pubDate": "2026-04-13 09:00:26  +0800",
+    "source": "36Kr AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "Slate Auto raises $650M to fund its affordable EV truck plans",
+    "link": "https://techcrunch.com/2026/04/13/slate-auto-raises-650m-to-fund-its-affordable-ev-truck-plans/",
+    "description": "Slate Auto's latest funding round was led by existing investor TWG Global, a firm run by LA Dodgers owner Mark Walter.",
+    "pubDate": "Mon, 13 Apr 2026 13:26:33 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Roblox introduces ‘Kids’ and ‘Select’ accounts for age-appropriate access to games and chat",
+    "link": "https://techcrunch.com/2026/04/13/roblox-introduces-kids-and-select-accounts-for-age-appropriate-access-to-games-and-chat/",
+    "description": "Users aged five to nine will be assigned to a \"Roblox Kids\" account, and users aged nine to 15 to will be put in a \"Roblox Select\" account.",
+    "pubDate": "Mon, 13 Apr 2026 12:15:00 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "The largest orbital compute cluster is open for business",
+    "link": "https://techcrunch.com/2026/04/13/the-largest-orbital-compute-cluster-is-open-for-business/",
+    "description": "Kepler Communications is flying 40 GPUs in Earth orbit. And its latest customer is Sophia Space.",
+    "pubDate": "Mon, 13 Apr 2026 07:01:00 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Trump officials may be encouraging banks to test Anthropic’s Mythos model",
+    "link": "https://techcrunch.com/2026/04/12/trump-officials-may-be-encouraging-banks-to-test-anthropics-mythos-model/",
+    "description": "The report is particularly surprising since the Department of Defense recently declared Anthropic a supply-chain risk.",
+    "pubDate": "Sun, 12 Apr 2026 21:14:38 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Apple reportedly testing four designs for upcoming smart glasses",
+    "link": "https://techcrunch.com/2026/04/12/apple-reportedly-testing-four-designs-for-upcoming-smart-glasses/",
+    "description": "These glasses are a step back from an ambitious plan that once called for Apple to launch a variety of mixed and augmented reality devices.",
+    "pubDate": "Sun, 12 Apr 2026 19:58:42 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "X says it’s reducing payments to clickbait accounts",
+    "link": "https://techcrunch.com/2026/04/12/x-says-its-reducing-payments-to-clickbait-accounts/",
+    "description": "X is cutting back on payments to accounts that are “flooding the timeline” with clickbait and rapid-fire news aggregation, according to its head of product Nikita Bier",
+    "pubDate": "Sun, 12 Apr 2026 17:02:20 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "TechCrunch Mobility: Who is poaching all the self-driving vehicle talent?",
+    "link": "https://techcrunch.com/2026/04/12/techcrunch-mobility-who-is-poaching-all-the-self-driving-vehicle-talent/",
+    "description": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.",
+    "pubDate": "Sun, 12 Apr 2026 16:06:00 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "From LLMs to hallucinations, here’s a simple guide to common AI terms",
+    "link": "https://techcrunch.com/2026/04/12/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+    "description": "The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.",
+    "pubDate": "Sun, 12 Apr 2026 15:07:08 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "At the HumanX conference, everyone was talking about Claude",
+    "link": "https://techcrunch.com/2026/04/12/at-the-humanx-conference-everyone-was-talking-about-claude/",
+    "description": "Anthropic was the star of the show at San Francisco's AI-centric conference.",
+    "pubDate": "Sun, 12 Apr 2026 15:00:00 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Slate Auto: Everything you need to know about the Bezos-backed EV startup",
+    "link": "https://techcrunch.com/2026/04/12/slate-auto-everything-you-need-to-know-about-the-bezos-backed-ev-startup/",
+    "description": "Slate auto burst onto the scene in April 2025. Here is a timeline that covers its origins, backers, product, and other new details.",
+    "pubDate": "Sun, 12 Apr 2026 14:00:00 +0000",
+    "source": "TechCrunch",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "SwitchBot’s button-pressing robot is now available with a rechargeable battery",
+    "link": "https://www.theverge.com/tech/909765/switchbot-bot-rechargeable-smart-home-usb-c",
+    "description": "The SwitchBot Bot Rechargeable’s battery has its own USB-C port for charging. | Image: SwitchBot\t\n\nSwitchBot is introducing a new version of the tiny button-pressing robot that helped launch the company a decade ago. The functionality of the new SwitchBot Bot is exactly the same as the original that the company will continue to sell, but comes with a rechargeable battery instead of a disposable one. \nThe SwitchBot Bot Rechargeable is available now through the company's online store and Amazon fo",
+    "pubDate": "2026-04-13T14:00:00.000Z",
+    "source": "The Verge",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Can Puck reinvent the news business for the influencer age?",
+    "link": "https://www.theverge.com/podcast/910443/can-puck-reinvent-the-news-business-for-the-influencer-age",
+    "description": "Today, I’m talking with Sarah Personette, CEO of Puck, which is a fancy new media company that’s been around for just about five years now.\nPuck hires big stars and gives them newsletters that are all mostly part of a subscription bundle. These newsletters are often must-reads in their categories — everyone in Hollywood reads Puck’s Matt Belloni, for instance. Those reporters then get equity in Puck and a share of the company’s revenue.\nThe idea is to combine the financial incentives of the infl",
+    "pubDate": "2026-04-13T14:00:00.000Z",
+    "source": "The Verge",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "The Strait of Hormuz blockade is causing a slow-moving food crisis",
+    "link": "https://www.theverge.com/science/910326/iran-strait-hormuz-fertilizer-feedstock-food-crisis",
+    "description": "A view of the vessels passing through Strait of Hormuz following the two-week temporary ceasefire reached between the United States and Iran, seen in Oman on April 8, 2026. | Shady Alassar/Anadolu via Getty Images\t\n\nFarmers are very busy in the spring, under pressure to get crops into the ground just as the Northern Hemisphere begins to thaw. But this year has been different for many, thanks in large part to the escalating war in Iran and the closure of the Strait of Hormuz.\nThe Strait of Hormuz",
+    "pubDate": "2026-04-13T13:00:00.000Z",
+    "source": "The Verge",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Roblox will need age verification to make sure you’re at least 9 years old",
+    "link": "https://www.theverge.com/games/910218/roblox-age-verification-check-games-kids-select-accounts",
+    "description": "Roblox is about to make a big change to how you can access games on its platform: If you want to play any game that's intended for users nine or older, you will have to complete an age verification process. The shift is happening as part of a rollout of new Roblox Kids and Roblox Select accounts, which have different levels of protections for kids of different age groups.\nRoblox has come under intense scrutiny over alleged child safety issues on the platform, and the company is the subject of mu",
+    "pubDate": "2026-04-13T12:15:00.000Z",
+    "source": "The Verge",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Roblox has games again",
+    "link": "https://www.theverge.com/games/910699/roblox-games-experiences-switch-friends-connections",
+    "description": "Roblox is making a subtle but notable change. After swapping the word \"game\" for \"experience\" all over its website and mobile apps in 2021 while the Epic Games v. Apple trial was taking place, Roblox is getting more comfortable with using the term \"games\" once again.\n\"Over time, we've learned that 'experiences' isn't an intuitive term for many parents, older players, and game developers,\" Roblox spokesperson Juliet Chaitin-Lefcourt tells The Verge. \"'Games' is clearer and better reflects what Ro",
+    "pubDate": "2026-04-13T12:15:00.000Z",
+    "source": "The Verge",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Did Neuralink make the wrong bet?",
+    "link": "https://www.theverge.com/tech/910834/neuralink-bcis-bet",
+    "description": "Elon Musk promised Neuralink would bring superhuman abilities and minds merged with AI. Then he fueled a runaway hype train for his brain implant technology, which ended up with a grisly record for implants in monkeys and some success with human subjects. But for all of the hype, he's still further away than Mars from his goal. And that's because his relentless ambition is once again hitting the wall of scientific reality.\nThe heart of the issue is how brain-computer interfaces (BCIs) translate ",
+    "pubDate": "2026-04-13T11:00:00.000Z",
+    "source": "The Verge",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Microsoft&#8217;s new Xbox Gamepad Cursor adds a virtual mouse to handhelds",
+    "link": "https://www.theverge.com/news/910901/microsoft-xbox-gamepad-cursor-windows-handhelds",
+    "description": "Microsoft has started testing its own virtual mouse cursor inside its Xbox mode for Windows-based handhelds. The new Gamepad Cursor option provides a quick way to turn the left stick of a handheld like the Xbox Ally X into a virtual mouse.\nWhile Asus has its own cursor as part of Armory Crate, Microsoft's Gamepad Cursor lives inside its own Xbox mode in Windows 11, and it's easy to activate from the Game Bar without having to use Armory Crate. Once activated, the Gamepad Cursor will turn your le",
+    "pubDate": "2026-04-13T10:29:17.000Z",
+    "source": "The Verge",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Sam Altman reportedly targeted in second attack",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/910890/openai-sam-altman-second-home-attack-shooting",
+    "description": "Sam Altman was seemingly targeted by a second attack on Sunday morning, with two suspects arrested following a shooting at his Russian Hill residence, The San Francisco Standard reports. The suspects were arrested and charged with negligent discharge, according to a police report on the incident, citing surveillance footage that appears to show a vehicle passenger firing a weapon at Altman's home.\nThis follows an earlier attack on Friday, in which a 20-year-old man was arrested for allegedly thr",
+    "pubDate": "2026-04-13T09:25:57.000Z",
+    "source": "The Verge",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Huawei beats Apple and Samsung with new wide foldable",
+    "link": "https://www.theverge.com/tech/910867/huawei-pura-x-max-foldable-phone-wide-china",
+    "description": "The Pura X Max’s wide aspect ratio should make it a better option for watching horizontal video. | Image: Huawei\t\n\nApple and Samsung have both been strongly linked with plans for foldable phones in a boxy, wide aspect ratio, but it looks like another company will get there first. Huawei has just revealed the design of the Pura X Max, a new foldable it's launching in China next week, and its passport-esque form factor is a dead ringer for early leaks of the iPhone Fold.\nWe don't know too much abo",
+    "pubDate": "2026-04-13T08:13:41.000Z",
+    "source": "The Verge",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "不会写代码也能用 AI 干活了：OpenAI 正在做一个“替你用电脑”的 Super App，新模型Spud 几周内登场",
+    "link": "https://www.infoq.cn/article/lAmhJxwuoPLvsKAF8WCV?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 18:48:30 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "“同事.skill”不用写了，爱马仕 Hermes 主动“蒸馏”你，还让开发者集体抛弃 “龙虾”？！",
+    "link": "https://www.infoq.cn/article/Xv0OsbvHjLT34YzWKc3J?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 18:43:56 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "Claude 吞噬一切？“Vibe Coding 公司的最大错觉是以为自己有护城河”",
+    "link": "https://www.infoq.cn/article/F88ML5vdJkc4dkreyamI?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 18:03:01 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "写入快 2 倍，查询快 6 倍，存储成本反降 50%：丰巢日志平台从 ELK 升级为 Apache Doris",
+    "link": "https://www.infoq.cn/article/mmH9gF4Lqj5xRHuvcxjf?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 17:42:58 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "不用则废：开发者直面 AI 编码工具的隐性代价",
+    "link": "https://www.infoq.cn/article/bLageDSMAujcPRLriJi5?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 16:59:11 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "从拒绝 AI 到一切先问 Agent，DHH：这是我最爽的编程时刻之一，但程序员黄金时代到头了",
+    "link": "https://www.infoq.cn/article/dOey7eV1T9p3dtPWTPCV?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 16:19:48 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "OpenAI 不想写 spec 了：Codex 只留 10 条要点，把执行交给 skills",
+    "link": "https://www.infoq.cn/article/C2fWkH2EgBlDPNUNlcZX?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 15:43:50 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "Cloudflare发布Dynamic Workers公开测试版：基于Isolates的沙箱环境执行AI智能体代码",
+    "link": "https://www.infoq.cn/article/71XfFmTWWDmIhtqjoZED?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 15:00:00 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "谷歌推出AppFunctions连接AI智能体和Android应用",
+    "link": "https://www.infoq.cn/article/y8lHXFCpi7jOcK5mspSd?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 14:00:00 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "FOSDEM 2026：WebTransport简介，下一个 WebSocket？！",
+    "link": "https://www.infoq.cn/article/3srVq9H48FGmxEftrv5l?utm_source=rss&utm_medium=article",
+    "description": "点击查看原文>",
+    "pubDate": "Mon, 13 Apr 2026 11:00:00 GMT",
+    "source": "InfoQ AI",
+    "category": "人工智能",
+    "type": "rss"
+  },
+  {
+    "title": "The Hidden Cost of ‘Reusable Components’ in Vue",
+    "link": "https://dev.to/livecodebase/the-hidden-cost-of-reusable-components-in-vue-4mce",
+    "description": "Reusable components sound like the perfect solution for building any application: write once and use everywhere, with a single source of truth that we can use to make global changes by modifying just one component.\nBut when the project gets huge with lots of complexities, then managing that component will become a nightmare. That day, I learned that over-reusability can quietly destroy our codebase.\nAs a developer, we are often told to follow:\nMake components reusable\nAvoid duplication\nKeep thin",
+    "pubDate": "Mon, 13 Apr 2026 14:32:13 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "Stop Copy-Pasting Terraform State Configs: Use Terragrunt instead",
+    "link": "https://dev.to/jeancy/stop-copy-pasting-terraform-state-configs-use-terragrunt-instead-ana",
+    "description": "Prerequisites\nBasic knowledge of Terraform (HCL Syntax, resources, variables, remote state), the full prerequisite code is available in the GitHub repository\n\nTerraform installed on your machine (v0.12 or higher)\nTerragrunt installed, check the official installation guide\n\nAn AWS account with suffficient permissions to create S3  buckets and DynamoDB tables\nAWS CLI configured with your credentials (aws configure)\nVisual Studio Codes as your code editor, with the HashiCorp Terraform extension for",
+    "pubDate": "Mon, 13 Apr 2026 14:31:31 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "I built a browser-based coding education platform as a CS student, here's how",
+    "link": "https://dev.to/delfinobiang/i-built-a-browser-based-coding-education-platform-as-a-cs-student-heres-how-9k9",
+    "description": "A few months ago I got tired of coding platforms that either spoon-fed you theory or made you watch someone else code. So I built my own, Helix, a browser-based platform where learners write and run real code from lesson one.\nHere's what's under the hood:\n🐍 Real Python execution in the browser\n🔐 Auth without a backend\n💳 Stripe on a static site\n🎨 Pure CSS animations\nWhat I learned:\nYou can build a lot without a backend if you're creative\nWould love feedback from this community, what would you",
+    "pubDate": "Mon, 13 Apr 2026 14:28:22 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "Semantic SEO for WordPress: Rank Higher Without Keyword Stuffing",
+    "link": "https://dev.to/fai_0e4beef557fe0f42b1a0b/semantic-seo-for-wordpress-rank-higher-without-keyword-stuffing-3h18",
+    "description": "Keywords alone won't cut it in 2026. Google wants context, entities, and user intent. As a WordPress dev from Multan, here's how semantic SEO turns your sites (and client sites) into ranking machines—using plugins you already know.\nYou build WooCommerce stores daily. But without semantic signals, they drown in SERPs. Semantic SEO reads the relationships between words, not just matches. Think: \"WordPress speed optimization\" → related entities like \"WP Rocket\", \"lazy loading\", \"Core Web Vitals\". w",
+    "pubDate": "Mon, 13 Apr 2026 14:22:10 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "LangChain + ProxyClaw: Build an Agent That Can Actually Browse the Web",
+    "link": "https://dev.to/proxyclaw/langchain-proxyclaw-build-an-agent-that-can-actually-browse-the-web-p36",
+    "description": "You've built a LangChain agent. It can reason. It can use tools. It can call APIs.\nThen you point it at the web — and it immediately breaks.\nCAPTCHAs. IP bans. Cloudflare blocks. JavaScript-heavy pages that return blank HTML. The web was not built for agents, and it actively fights back.\nThis post shows you how to fix that — using ProxyClaw as a drop-in web access layer for your LangChain agent.\nWhen your LangChain agent tries to fetch a URL, it's making a raw HTTP request from a cloud IP. Every",
+    "pubDate": "Mon, 13 Apr 2026 14:21:45 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "Scraping Zillow, Amazon, and Reddit with 3 Lines of Python (No Browser, No Blocks)",
+    "link": "https://dev.to/proxyclaw/scraping-zillow-amazon-and-reddit-with-3-lines-of-python-no-browser-no-blocks-1boo",
+    "description": "Zillow blocks scrapers. Amazon detects bots in milliseconds. Reddit rate-limits anything that isn't a human clicking slowly.\nThese are the three sites developers most want to scrape — and the three sites that are hardest to scrape reliably.\nThis post shows you how to scrape all three with 3 lines of Python each. No Playwright. No Selenium. No proxy rotation code. No CAPTCHA solving logic. Just clean data.\nZillow: JavaScript-rendered listings, Cloudflare protection, and aggressive bot fingerprint",
+    "pubDate": "Mon, 13 Apr 2026 14:21:09 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "Pass CCA Foundations with 100 real-world scenario questions",
+    "link": "https://dev.to/neerajkr7/pass-cca-foundations-with-100-real-world-scenario-questions-4pd7",
+    "description": "I couldn’t find any decent free practice material for the Claude Certified Architect (CCA) Foundations exam, so I built one.\nThe exam came out recently, and most of what’s available right now is either locked behind a paywall or too surface-level to be useful. I wanted something that actually reflects how the exam tests you — not definitions, but decisions.\nSo I put together a 100-question mock exam based entirely on scenario-driven problems.\nEach question forces you to think through trade-offs:",
+    "pubDate": "Mon, 13 Apr 2026 14:20:38 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "Using Graphify to turn Incident Data into a Knowledge Graph",
+    "link": "https://dev.to/hamza_2315/using-graphify-to-turn-incident-data-into-a-knowledge-graph-528l",
+    "description": "A few days ago Andrej Karpathy said we should build LLM powered knowledge bases. Within 48 hours someone made Graphify, a tool that turns raw data into a semantic knowledge graph with a single command.\nBut what if we applied this idea to incident management?\nMost incident management tools tell you what just happened:\nIncident created\nAlerts triggered\nTimeline recorded\nBut during an actual incident, that’s not what you need. What you really need is:\nWhat happened last time this service broke?\nWho",
+    "pubDate": "Mon, 13 Apr 2026 14:20:22 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "Docker Multi-Stage Builds: Smaller, Secure Production Images",
+    "link": "https://dev.to/devopsstart/docker-multi-stage-builds-smaller-secure-production-images-52fg",
+    "description": "Originally published on devopsstart.com, this guide explores how to use Docker multi-stage builds to slash image sizes and harden your production security.\nDeploying applications with Docker has become a standard practice in modern software development. However, simply containerizing your code isn't enough; you need to build Docker images that are lean, secure, and truly ready for production. This is where Docker multi-stage builds become not just a best practice, but a critical component of an ",
+    "pubDate": "Mon, 13 Apr 2026 14:15:16 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "Rules Caught Nothing, Memory Caught Everything.",
+    "link": "https://dev.to/vaani_sharma_71ea6aa72cdd/rules-caught-nothing-memory-caught-everything-9ni",
+    "description": "Every invoice processing system has rules. \"Flag amounts over $50,000 for manual review.\" \"Reject invoices missing a vendor registration number.\" These are clear, manageable, and easy to apply.\nThe problem is that most cases of invoice fraud, duplicate submissions, and billing mistakes don’t trigger these rules. They appear to be ordinary invoices. A vendor submitting slightly different duplicate invoices,a matching amount but a different invoice number,passes all field-level checks. The pattern",
+    "pubDate": "Mon, 13 Apr 2026 14:15:12 +0000",
+    "source": "Dev.to",
+    "category": "开发工具",
+    "type": "rss"
+  },
+  {
+    "title": "Meta spins up AI version of Mark Zuckerberg to engage with employees",
+    "link": "https://arstechnica.com/ai/2026/04/meta-spins-up-ai-version-of-mark-zuckerberg-to-engage-with-employees/",
+    "description": "The Meta chief is personally involved in training and testing his animated AI.",
+    "pubDate": "Mon, 13 Apr 2026 13:52:46 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "To teach in the time of ChatGPT is to know pain",
+    "link": "https://arstechnica.com/science/2026/04/to-teach-in-the-time-of-chatgpt-is-to-know-pain/",
+    "description": "LLM use is the most demoralizing problem I’ve faced as a college instructor.",
+    "pubDate": "Mon, 13 Apr 2026 11:00:32 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Shock from Iran war has Trump's vision for US energy dominance flailing",
+    "link": "https://arstechnica.com/science/2026/04/shock-from-iran-war-has-trumps-vision-for-us-energy-dominance-flailing/",
+    "description": "Record domestic oil and gas production hasn't saved US drivers from price spikes.",
+    "pubDate": "Sun, 12 Apr 2026 11:17:26 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "AI models are terrible at betting on soccer—especially xAI Grok",
+    "link": "https://arstechnica.com/ai/2026/04/ai-models-are-terrible-at-betting-on-soccer-especially-xai-grok/",
+    "description": "Systems from Google, OpenAI, Anthropic, and xAI struggle with the Premier League.",
+    "pubDate": "Sat, 11 Apr 2026 11:15:17 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "The Artemis II mission has ended. Where does NASA go from here?",
+    "link": "https://arstechnica.com/space/2026/04/the-artemis-ii-mission-has-ended-where-does-nasa-go-from-here/",
+    "description": "\"The work ahead is greater than the work behind us.\"",
+    "pubDate": "Sat, 11 Apr 2026 03:24:21 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Four astronauts are back home after a daring ride around the Moon",
+    "link": "https://arstechnica.com/space/2026/04/four-astronauts-are-back-home-after-a-daring-ride-around-the-moon/",
+    "description": "\"I can't imagine a better crew that just completed a perfect mission right now.\"",
+    "pubDate": "Sat, 11 Apr 2026 01:21:10 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Californians sue over AI tool that records doctor visits",
+    "link": "https://arstechnica.com/tech-policy/2026/04/californians-sue-over-ai-tool-that-records-doctor-visits/",
+    "description": "Plaintiffs say transcription tool processed confidential chats offsite.",
+    "pubDate": "Fri, 10 Apr 2026 21:43:33 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "New paper argues history, not mantle plume, powers Yellowstone",
+    "link": "https://arstechnica.com/science/2026/04/new-paper-argues-history-not-mantle-plume-powers-yellowstone/",
+    "description": "A now-vanished plate under North America may open the crust below Yellowstone.",
+    "pubDate": "Fri, 10 Apr 2026 20:06:39 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "F1 moves a step closer to fixing its 2026 hybrid problem",
+    "link": "https://arstechnica.com/cars/2026/04/f1-moves-a-step-closer-to-fixing-its-2026-hybrid-problem/",
+    "description": "Algorithms, not drivers, are deciding how hard to accelerate, and that's no good.",
+    "pubDate": "Fri, 10 Apr 2026 19:07:46 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "Report: US demands Reddit unmask ICE critic, summons firm to grand jury",
+    "link": "https://arstechnica.com/tech-policy/2026/04/trump-admin-hounds-reddit-to-reveal-identity-of-user-who-criticized-ice/",
+    "description": "Trump admin reportedly gets grand jury involved in attempt to identify Redditor.",
+    "pubDate": "Fri, 10 Apr 2026 18:43:25 +0000",
+    "source": "Ars Technica",
+    "category": "科技",
+    "type": "rss"
+  },
+  {
+    "title": "GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI",
+    "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-getting-started-with-github-copilot-cli/",
+    "description": "GitHub for Beginners: Getting started with the GitHub Copilot CLI, a step-by-step tutorial.\nThe post GitHub Copilot CLI for Beginners: Getting started with GitHub Copilot CLI appeared first on The GitHub Blog.",
+    "pubDate": "Fri, 10 Apr 2026 16:00:00 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "GitHub availability report: March 2026",
+    "link": "https://github.blog/news-insights/company-news/github-availability-report-march-2026/",
+    "description": "In March, we experienced four incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: March 2026 appeared first on The GitHub Blog.",
+    "pubDate": "Thu, 09 Apr 2026 02:21:17 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "GitHub Universe is back: We want you to take the stage",
+    "link": "https://github.blog/news-insights/company-news/github-universe-is-back-we-want-you-to-take-the-stage/",
+    "description": "Get inspired by five of the most memorable, magical, and quirky Universe sessions to date.\nThe post GitHub Universe is back: We want you to take the stage appeared first on The GitHub Blog.",
+    "pubDate": "Wed, 08 Apr 2026 16:35:46 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "GitHub Copilot CLI combines model families for a second opinion",
+    "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-combines-model-families-for-a-second-opinion/",
+    "description": "Discover how Rubber Duck provides a different perspective to GitHub Copilot CLI. \nThe post GitHub Copilot CLI combines model families for a second opinion appeared first on The GitHub Blog.",
+    "pubDate": "Mon, 06 Apr 2026 21:53:49 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "The uphill climb of making diff lines performant",
+    "link": "https://github.blog/engineering/architecture-optimization/the-uphill-climb-of-making-diff-lines-performant/",
+    "description": "The path to better performance is often found in simplicity.\nThe post The uphill climb of making diff lines performant appeared first on The GitHub Blog.",
+    "pubDate": "Fri, 03 Apr 2026 16:00:00 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "Securing the open source supply chain across GitHub",
+    "link": "https://github.blog/security/supply-chain-security/securing-the-open-source-supply-chain-across-github/",
+    "description": "Recent attacks on open source focus on exfiltrating secrets; here are the prevention steps you can take today, plus a look at the security capabilities GitHub is working on.\nThe post Securing the open source supply chain across GitHub appeared first on The GitHub Blog.",
+    "pubDate": "Wed, 01 Apr 2026 19:20:12 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "Run multiple agents at once with /fleet in Copilot CLI",
+    "link": "https://github.blog/ai-and-ml/github-copilot/run-multiple-agents-at-once-with-fleet-in-copilot-cli/",
+    "description": "/fleet lets Copilot CLI dispatch multiple agents in parallel. Learn how to write prompts that split work across files, declare dependencies, and avoid common pitfalls.\nThe post Run multiple agents at once with /fleet in Copilot CLI appeared first on The GitHub Blog.",
+    "pubDate": "Wed, 01 Apr 2026 15:00:00 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "Agent-driven development in Copilot Applied Science",
+    "link": "https://github.blog/ai-and-ml/github-copilot/agent-driven-development-in-copilot-applied-science/",
+    "description": "I used coding agents to build agents that automated part of my job. Here's what I learned about working better with coding agents.\nThe post Agent-driven development in Copilot Applied Science appeared first on The GitHub Blog.",
+    "pubDate": "Tue, 31 Mar 2026 16:00:00 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "GitHub for Beginners: Getting started with GitHub security",
+    "link": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-security/",
+    "description": "Learn how to secure your projects and keep them safe with GitHub Advanced Security.\nThe post GitHub for Beginners: Getting started with GitHub security appeared first on The GitHub Blog.",
+    "pubDate": "Mon, 30 Mar 2026 16:00:00 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "What’s coming to our GitHub Actions 2026 security roadmap",
+    "link": "https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/",
+    "description": "A look at GitHub Actions’ 2026 roadmap, outlining how secure defaults, policy controls, and CI/CD observability harden the software supply chain end to end.\nThe post What’s coming to our GitHub Actions 2026 security roadmap appeared first on The GitHub Blog.",
+    "pubDate": "Thu, 26 Mar 2026 16:49:14 +0000",
+    "source": "GitHub Blog",
+    "category": "开源",
+    "type": "rss"
+  },
+  {
+    "title": "Durable Objects in Dynamic Workers: Give each AI-generated app its own database",
+    "link": "https://blog.cloudflare.com/durable-object-facets-dynamic-workers/",
+    "description": "We’re introducing Durable Object Facets, allowing Dynamic Workers to instantiate Durable Objects with their own isolated SQLite databases. This enables developers to build platforms that run persistent, stateful code generated on-the-fly.",
+    "pubDate": "Mon, 13 Apr 2026 13:08:35 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Agents have their own computers with Sandboxes GA",
+    "link": "https://blog.cloudflare.com/sandbox-ga/",
+    "description": "Cloudflare Sandboxes give AI agents a persistent, isolated environment: a real computer with a shell, a filesystem, and background processes that starts on demand and picks up exactly where it left off.",
+    "pubDate": "Mon, 13 Apr 2026 13:08:35 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Dynamic, identity-aware, and secure Sandbox auth",
+    "link": "https://blog.cloudflare.com/sandbox-auth/",
+    "description": "Outbound Workers for Sandboxes provide a programmable, zero-trust egress proxy for AI agents. This allows developers to inject credentials and enforce dynamic security policies without exposing sensitive tokens to untrusted code.",
+    "pubDate": "Mon, 13 Apr 2026 13:00:00 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Welcome to Agents Week",
+    "link": "https://blog.cloudflare.com/welcome-to-agents-week/",
+    "description": "Cloudflare's mission has always been to help build a better Internet. Sometimes that means building for the Internet as it exists. Sometimes it means building for the Internet as it's about to become. \n\nThis week, we're kicking off Agents Week, dedicated to what comes next.",
+    "pubDate": "Sun, 12 Apr 2026 17:01:05 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "500 Tbps of capacity: 16 years of scaling our global network",
+    "link": "https://blog.cloudflare.com/500-tbps-of-capacity/",
+    "description": "Cloudflare’s global network has officially crossed 500 Tbps of external capacity, enough to route more than 20% of the web and absorb the largest DDoS attacks ever recorded.",
+    "pubDate": "Fri, 10 Apr 2026 18:00:05 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "From bytecode to bytes: automated magic packet generation",
+    "link": "https://blog.cloudflare.com/from-bpf-to-packet/",
+    "description": "By applying symbolic execution and the Z3 theorem prover to BPF bytecode, we’ve automated the generation of malware trigger packets, cutting analysis time from hours to seconds.",
+    "pubDate": "Wed, 08 Apr 2026 13:00:00 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Cloudflare targets 2029 for full post-quantum security",
+    "link": "https://blog.cloudflare.com/post-quantum-roadmap/",
+    "description": "Recent advances in quantum hardware and software have accelerated the timeline on which quantum attack might happen. Cloudflare is responding by moving our target for full post-quantum security to 2029.",
+    "pubDate": "Tue, 07 Apr 2026 21:00:00 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "How we built Organizations to help enterprises manage Cloudflare at scale",
+    "link": "https://blog.cloudflare.com/organizations-beta/",
+    "description": "Cloudflare Organizations is now in public beta, introducing a new management layer for enterprise customers with multiple accounts. Learn how we consolidated our authorization systems to enable org-wide management.",
+    "pubDate": "Mon, 06 Apr 2026 21:00:00 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Why we're rethinking cache for the AI era",
+    "link": "https://blog.cloudflare.com/rethinking-cache-ai-humans/",
+    "description": "The explosion of AI-bot traffic, representing over 10 billion requests per week, has opened up new challenges and opportunities for cache design. We look at some of the ways AI bot traffic differs from humans, how this impacts CDN cache, and some early ideas for how Cloudflare is designing systems to improve the AI and human experience.",
+    "pubDate": "Thu, 02 Apr 2026 13:00:00 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Our ongoing commitment to privacy for the 1.1.1.1 public DNS resolver",
+    "link": "https://blog.cloudflare.com/1111-privacy-examination-2026/",
+    "description": "Eight years ago, we launched 1.1.1.1 to build a faster, more private Internet. Today, we’re sharing the results of our latest independent examination. The result: our privacy protections are working exactly as promised.",
+    "pubDate": "Wed, 01 Apr 2026 13:00:00 GMT",
+    "source": "Cloudflare Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Launching S3 Files, making S3 buckets accessible as file systems",
+    "link": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/",
+    "description": "Amazon S3 Files makes S3 buckets accessible as high-performance file systems on AWS compute resources, eliminating the tradeoff between object storage benefits and interactive file capabilities while enabling seamless data sharing with ~1ms latencies.",
+    "pubDate": "Tue, 07 Apr 2026 19:18:32 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "AWS Weekly Roundup: AWS DevOps Agent & Security Agent GA, Product Lifecycle updates, and more (April 6, 2026)",
+    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026/",
+    "description": "Last week, I visited AWS Hong Kong User Group with my team. Hong Kong has a small but strong community, and their energy and passion are high. They recently started a new AI user group, and we hope more people will join. I was able to strengthen my bond with the community through great food […]",
+    "pubDate": "Mon, 06 Apr 2026 16:51:00 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Amazon Bedrock Guardrails supports cross-account safeguards with centralized control and management",
+    "link": "https://aws.amazon.com/blogs/aws/amazon-bedrock-guardrails-supports-cross-account-safeguards-with-centralized-control-and-management/",
+    "description": "Organizational safeguards are now generally available in Amazon Bedrock Guardrails, enabling centralized enforcement and management of safety controls across multiple AWS accounts within an AWS Organization.",
+    "pubDate": "Fri, 03 Apr 2026 20:36:40 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Announcing managed daemon support for Amazon ECS Managed Instances",
+    "link": "https://aws.amazon.com/blogs/aws/announcing-managed-daemon-support-for-amazon-ecs-managed-instances/",
+    "description": "Amazon ECS Managed Daemons gives platform engineers independent control over monitoring, logging, and tracing agents without application team coordination, ensuring consistent daemon deployment and comprehensive host-level observability at scale.",
+    "pubDate": "Wed, 01 Apr 2026 23:31:24 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Announcing the AWS Sustainability console: Programmatic access, configurable CSV reports, and Scope 1–3 reporting in one place",
+    "link": "https://aws.amazon.com/blogs/aws/announcing-the-aws-sustainability-console-programmatic-access-configurable-csv-reports-and-scope-1-3-reporting-in-one-place/",
+    "description": "AWS announces the Sustainability console, a new standalone service that consolidates carbon emissions reporting and resources, giving sustainability teams independent access to Scope 1, 2, and 3 emissions data without requiring billing permissions.",
+    "pubDate": "Tue, 31 Mar 2026 19:04:00 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "AWS Weekly Roundup: AWS AI/ML Scholars program, Agent Plugin for AWS Serverless, and more (March 30, 2026)",
+    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-ai-ml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026/",
+    "description": "Last week, what excited me most was the launch of the 2026 AWS AI & ML Scholars program by Swami Sivasubramanian, VP of AWS Agentic AI, to provide free AI education to up to 100,000 learners worldwide. The program has two phases: a Challenge phase where you’ll learn foundational generative AI skills, followed by a […]",
+    "pubDate": "Mon, 30 Mar 2026 16:11:28 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Customize your AWS Management Console experience with visual settings including account color, region and service visibility",
+    "link": "https://aws.amazon.com/blogs/aws/customize-your-aws-management-console-experience-with-visual-settings-including-account-color-region-and-service-visibility/",
+    "description": "AWS introduces visual customization capability in AWS Management Console that enables selective display of relevant AWS Regions and services for your team members. By hiding unused Regions and services, you can reduce cognitive load and eliminate unnecessary clicks and scrolling, helping you focus better and work faster.",
+    "pubDate": "Thu, 26 Mar 2026 21:34:19 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "Announcing Amazon Aurora PostgreSQL serverless database creation in seconds",
+    "link": "https://aws.amazon.com/blogs/aws/announcing-amazon-aurora-postgresql-serverless-database-creation-in-seconds/",
+    "description": "AWS introduces a new express configuration for Amazon Aurora PostgreSQL, a streamlined database creation experience with preconfigured defaults designed to help you get started in seconds. With Aurora PostgreSQL, start building quickly from the RDS Console or your preferred developer tool—with the ability to modify configurations anytime. Plus, Aurora PostgreSQL is now available with AWS Free Tier.",
+    "pubDate": "Wed, 25 Mar 2026 20:37:11 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "AWS Weekly Roundup: NVIDIA Nemotron 3 Super on Amazon Bedrock, Nova Forge SDK, Amazon Corretto 26, and more (March 23, 2026)",
+    "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-nvidia-nemotron-3-super-on-amazon-bedrock-nova-forge-sdk-amazon-corretto-26-and-more-march-23-2026/",
+    "description": "Hello! I’m Daniel Abib, and this is my first AWS Weekly Roundup. I’m a Senior Specialist Solutions Architect at AWS, focused on the generative AI and Amazon Bedrock. With over 28 years of experience in solution architecture, software development, and cloud architecture, I help Startups & Enterprises harness the power of generative AI with Amazon […]",
+    "pubDate": "Mon, 23 Mar 2026 16:40:41 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  },
+  {
+    "title": "20 years in the AWS Cloud – how time flies!",
+    "link": "https://aws.amazon.com/blogs/aws/20-years-in-the-aws-cloud-how-time-flies/",
+    "description": "Celebrating twenty years of innovation in ML and AI technology at AWS. Countless developers—myself included—have embraced cloud computing and actively used its capabilities to accomplish what was previously impossible.",
+    "pubDate": "Thu, 19 Mar 2026 13:35:54 +0000",
+    "source": "AWS Blog",
+    "category": "云计算",
+    "type": "rss"
+  }
+]

@@ -1,0 +1,47 @@
+name: AI News Daily
+
+on:
+  schedule:
+    # 每天 UTC 2:00 执行（北京时间 10:00）
+    - cron: '0 2 * * *'
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout 代码
+        uses: actions/checkout@v4
+
+      - name: 📦 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 📦 安装依赖
+        run: npm ci
+
+      - name: 🤖 生成日报 + 同步数据库
+        env:
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+          NEWS_API_URL: ${{ secrets.NEWS_API_URL || 'https://github.stank.top/api/news/batch' }}
+          NEWS_API_TOKEN: ${{ secrets.NEWS_API_TOKEN }}
+          AI_MODEL: ${{ vars.AI_MODEL || 'qwen3.5-flash' }}
+          MAX_ITEMS_PER_SOURCE: ${{ vars.MAX_ITEMS_PER_SOURCE || '10' }}
+          MAX_ITEMS_FOR_SUMMARY: ${{ vars.MAX_ITEMS_FOR_SUMMARY || '30' }}
+        run: node src/index.js
+
+      - name: 📤 提交并推送
+        run: |
+          git config --local user.email "ai-news-daily[bot]@users.noreply.github.com"
+          git config --local user.name "AI News Daily Bot"
+          git add site/daily/
+          if git diff --staged --quiet; then
+            echo "📝 没有新的变更需要提交"
+          else
+            git commit -m "📰 AI日报 $(date +%Y-%m-%d)"
+            git push
+          fi
