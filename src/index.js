@@ -17,7 +17,7 @@ dayjs.locale('zh-cn');
 const { collectAll } = require('./collectors');
 const { dedupByUrl } = require('./processors/dedup');
 const AIProcessor = require('./processors/ai');
-const { generateDailyMarkdown, generateIndexMarkdown, generateDailyJson } = require('./processors/generator');
+const { generateDailyMarkdown, generateIndexMarkdown, generateDailyJson, generateBasicItems, generateBasicItemsRaw } = require('./processors/generator');
 const { syncToDatabase } = require('./processors/sync');
 
 // ==================== 配置 ====================
@@ -110,7 +110,7 @@ async function main() {
     return;
   }
 
-  // 4. AI 处理
+  // 4. AI 处理（仅处理前 N 条，控制成本）
   if (!CONFIG.apiKey) {
     console.error('❌ 未配置 DASHSCOPE_API_KEY，无法调用 AI');
     process.exit(1);
@@ -118,8 +118,13 @@ async function main() {
 
   const ai = new AIProcessor(CONFIG.apiKey, CONFIG.model);
 
-  // 限制 AI 处理的新闻数量（控制成本）
+  // 限制 AI 处理的新闻数量（控制成本），但保留所有新闻用于数据库同步
   const itemsForAI = dedupedItems.slice(0, CONFIG.maxItemsForSummary);
+  const itemsWithoutAI = dedupedItems.slice(CONFIG.maxItemsForSummary);
+
+  if (itemsWithoutAI.length > 0) {
+    console.log(`📌 AI 将处理前 ${itemsForAI.length} 条（生成摘要），剩余 ${itemsWithoutAI.length} 条将以基础信息入库`);
+  }
 
   // 4a. 批量生成摘要
   const enrichedItems = await ai.summarizeBatch(itemsForAI, 3);
@@ -130,7 +135,7 @@ async function main() {
   // 打印 Token 使用
   ai.printTokenUsage();
 
-  // 5. 生成 JSON 数据（主要输出）
+  // 5. 生成 JSON 数据（仅包含 AI 处理的精选条目，用于日报展示）
   console.log('\n📝 生成 JSON 数据...');
   const jsonData = generateDailyJson({
     items: enrichedItems,
@@ -138,16 +143,22 @@ async function main() {
     date: today,
   });
 
+  // 为未经 AI 处理的新闻生成基础 JSON
+  const basicItems = generateBasicItems(itemsWithoutAI, today);
+
+  // 合并：AI 处理的 + 基础信息的 = 全部新闻
+  const allItemsJson = [...jsonData, ...basicItems];
+
   // 确保输出目录存在
   if (!fs.existsSync(CONFIG.outputDir)) {
     fs.mkdirSync(CONFIG.outputDir, { recursive: true });
   }
 
   const jsonPath = path.join(CONFIG.outputDir, `${today}.json`);
-  fs.writeFileSync(jsonPath, JSON.stringify(jsonData, null, 2), 'utf-8');
-  console.log(`💾 JSON 数据已保存: ${jsonPath}`);
+  fs.writeFileSync(jsonPath, JSON.stringify(allItemsJson, null, 2), 'utf-8');
+  console.log(`💾 JSON 数据已保存: ${jsonPath}（AI摘要 ${enrichedItems.length} + 基础信息 ${itemsWithoutAI.length} = ${allItemsJson.length} 条）`);
 
-  // 6. 生成 Markdown 日报（兼容，作为网站展示用）
+  // 6. 生成 Markdown 日报（仅包含 AI 处理的精选条目，用于网站展示）
   console.log('📝 生成 Markdown 日报...');
   const markdown = generateDailyMarkdown({
     items: enrichedItems,
@@ -160,12 +171,17 @@ async function main() {
   console.log(`💾 日报已保存: ${mdPath}`);
 
   // 7. 更新索引
-  updateIndexJson(today, `AI 日报 - ${dayjs().format('YYYY年MM月DD日')}`, enrichedItems.length);
+  updateIndexJson(today, `AI 日报 - ${dayjs().format('YYYY年MM月DD日')}`, allItemsJson.length);
 
-  // 8. 同步到数据库
+  // 8. 同步到数据库（同步全部新闻，包括未经 AI 处理的）
   console.log('\n📡 同步数据到数据库...');
+  // 合并 AI 处理的条目和基础条目用于同步
+  const allItemsForSync = [
+    ...enrichedItems,
+    ...generateBasicItemsRaw(itemsWithoutAI),
+  ];
   const syncResult = await syncToDatabase({
-    items: enrichedItems,
+    items: allItemsForSync,
     highlights,
     date: today,
   });
@@ -175,7 +191,7 @@ async function main() {
   console.log('');
   console.log('═══════════════════════════════════════════════');
   console.log(`  ✅ 日报生成完成！`);
-  console.log(`  📄 ${enrichedItems.length} 条新闻`);
+  console.log(`  📄 ${allItemsJson.length} 条新闻（AI摘要 ${enrichedItems.length} + 基础信息 ${itemsWithoutAI.length}）`);
   if (syncResult.success) {
     console.log(`  📡 数据库: 新增${syncResult.inserted} 更新${syncResult.updated} 跳过${syncResult.skipped}`);
   } else if (!syncResult.skipped) {

@@ -7,13 +7,97 @@ const dayjs = require('dayjs');
 require('dayjs/locale/zh-cn');
 dayjs.locale('zh-cn');
 
+// ==================== 分类相关 ====================
+
 /**
- * 生成每日新闻 JSON 数据
+ * 合法分类枚举
+ */
+const VALID_CATEGORIES = [
+  '热门推荐', '大模型', 'AI写作', 'AI绘画', 'AI视频', 'AI聊天',
+  'AI编程', 'AI音频', 'AI办公', 'AI产品', 'AI学习资料',
+  'AI/ML', '开发工具', 'IDE', '开源', '云计算',
+];
+
+/**
+ * 分类关键词映射（AI 未返回时用于回退匹配）
+ */
+const CATEGORY_KEYWORDS = {
+  '热门推荐': ['breaking', '重磅', '突发', '重大', 'major'],
+  '大模型': ['gpt', 'llm', '大模型', 'claude', 'gemini', 'qwen', 'lama', 'mistral', 'model', 'language model'],
+  'AI写作': ['writing', '写作', '文案', 'copywriting', 'jasper'],
+  'AI绘画': ['image', 'painting', 'dall-e', 'midjourney', 'stable diffusion', '绘画', '绘图', 'sd', 'flux'],
+  'AI视频': ['video', 'sora', 'runway', 'pika', 'kling', '视频', '视频生成'],
+  'AI聊天': ['chatbot', 'chat', '对话', 'assistant', 'copilot'],
+  'AI编程': ['coding', 'programming', 'github', 'coder', 'devin', 'cursor', '编程', '代码', 'windsurf'],
+  'AI音频': ['audio', 'music', 'speech', 'tts', 'voice', '音频', '音乐', '语音'],
+  'AI办公': ['office', 'productivity', 'workspace', '办公', '效率', '自动化'],
+  'AI产品': ['product', 'release', 'launch', '发布', '上线', 'update', 'version'],
+  'AI学习资料': ['tutorial', 'course', 'learn', 'guide', '教程', '学习', '入门'],
+  'AI/ML': ['ai', 'ml', 'deep learning', 'machine learning', 'neural', '人工智能', '机器学习', '深度学习'],
+  '开发工具': ['dev', 'tool', 'developer', 'sdk', 'api', '开发', '工具', 'framework'],
+  'IDE': ['ide', 'editor', 'vscode', 'jetbrains', 'intellij', '编辑器'],
+  '开源': ['open source', 'github', '开源', 'repository', 'repo'],
+  '云计算': ['cloud', 'aws', 'azure', 'gcp', 'cloudflare', 'serverless', '云'],
+};
+
+/**
+ * 将分类名称规范化到合法枚举值
+ */
+function normalizeCategory(category) {
+  if (!category) return 'AI/ML';
+  if (VALID_CATEGORIES.includes(category)) return category;
+
+  // 关键词匹配回退
+  const lower = category.toLowerCase();
+  for (const [cat, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
+    if (keywords.some((kw) => lower.includes(kw))) {
+      return cat;
+    }
+  }
+
+  // 默认归类
+  if (/人工智能|科技|商业|硬件|安全|移动/.test(category)) return 'AI/ML';
+  return 'AI/ML';
+}
+
+/**
+ * 根据标题智能猜测分类
+ */
+function guessCategoryFromTitle(title) {
+  if (!title) return 'AI/ML';
+  const lower = title.toLowerCase();
+
+  // 按优先级匹配关键词
+  const priorityMap = [
+    ['大模型', ['gpt', 'llm', 'claude', 'gemini', 'qwen', 'llama', 'mistral', '大模型', 'language model', 'openai']],
+    ['AI绘画', ['dall-e', 'midjourney', 'stable diffusion', 'flux', '绘画', '图像生成', 'image generation']],
+    ['AI视频', ['sora', 'runway', 'pika', 'kling', '视频生成', 'video generation']],
+    ['AI编程', ['coding', 'cursor', 'windsurf', 'devin', 'github copilot', '代码助手', '编程助手']],
+    ['AI音频', ['tts', '语音', '音乐', 'audio', 'speech', 'voice', 'suno']],
+    ['开源', ['open source', '开源', 'repository', 'repo', 'github']],
+    ['云计算', ['aws', 'azure', 'gcp', 'cloudflare', 'vercel', 'serverless', '云服务']],
+    ['AI产品', ['release', 'launch', '发布', '上线', '更新', 'update']],
+    ['开发工具', ['sdk', 'api', 'framework', 'library', '工具']],
+  ];
+
+  for (const [cat, keywords] of priorityMap) {
+    if (keywords.some((kw) => lower.includes(kw))) {
+      return cat;
+    }
+  }
+
+  return 'AI/ML';
+}
+
+// ==================== 生成函数 ====================
+
+/**
+ * 生成每日新闻 JSON 数据（AI 处理过的条目）
  * @param {Object} options
  * @param {Array} options.items - 新闻条目列表
  * @param {string} options.highlights - AI 生成的今日要点
  * @param {string} options.date - 日期字符串 (YYYY-MM-DD)
- * @returns {Array} JSON 数组，每条新闻包含 title/category/summary/content/source/source_url/tags/is_featured/status/synced
+ * @returns {Array} JSON 数组
  */
 function generateDailyJson({ items, highlights, date }) {
   return items.map((item) => ({
@@ -27,6 +111,46 @@ function generateDailyJson({ items, highlights, date }) {
     is_featured: item.is_featured || 0,
     status: 1,
     synced: 0,
+  }));
+}
+
+/**
+ * 为未经 AI 处理的新闻生成基础 JSON 数据
+ * @param {Array} items - 未经 AI 处理的新闻条目
+ * @param {string} date - 日期
+ * @returns {Array} 基础 JSON 数组
+ */
+function generateBasicItems(items, date) {
+  return items.map((item) => ({
+    title: item.title || '',
+    category: guessCategoryFromTitle(item.title),
+    summary: item.description || item.title || '',
+    content: item.content || item.description || '',
+    source: item.source || '',
+    source_url: item.link || item.url || '',
+    tags: '',
+    is_featured: 0,
+    status: 1,
+    synced: 0,
+  }));
+}
+
+/**
+ * 为未经 AI 处理的新闻生成同步用的原始对象（sync.js 需要）
+ * @param {Array} items - 未经 AI 处理的新闻条目
+ * @returns {Array} 原始对象数组
+ */
+function generateBasicItemsRaw(items) {
+  return items.map((item) => ({
+    title: item.title || '',
+    category: guessCategoryFromTitle(item.title),
+    summary: item.description || item.title || '',
+    content: item.content || item.description || '',
+    source: item.source || '',
+    link: item.link || item.url || '',
+    url: item.link || item.url || '',
+    tags: '',
+    is_featured: 0,
   }));
 }
 
@@ -102,57 +226,6 @@ function generateDailyMarkdown({ items, highlights, date }) {
 }
 
 /**
- * 合法分类枚举
- */
-const VALID_CATEGORIES = [
-  '热门推荐', '大模型', 'AI写作', 'AI绘画', 'AI视频', 'AI聊天',
-  'AI编程', 'AI音频', 'AI办公', 'AI产品', 'AI学习资料',
-  'AI/ML', '开发工具', 'IDE', '开源', '云计算',
-];
-
-/**
- * 分类关键词映射（AI 未返回时用于回退匹配）
- */
-const CATEGORY_KEYWORDS = {
-  '热门推荐': ['breaking', '重磅', '突发', '重大', 'major'],
-  '大模型': ['gpt', 'llm', '大模型', 'claude', 'gemini', 'qwen', 'lama', 'mistral', 'model', 'language model'],
-  'AI写作': ['writing', '写作', '文案', 'copywriting', 'jasper'],
-  'AI绘画': ['image', 'painting', 'dall-e', 'midjourney', 'stable diffusion', '绘画', '绘图', 'sd', 'flux'],
-  'AI视频': ['video', 'sora', 'runway', 'pika', 'kling', '视频', '视频生成'],
-  'AI聊天': ['chatbot', 'chat', '对话', 'assistant', 'copilot'],
-  'AI编程': ['coding', 'programming', 'github', 'coder', 'devin', 'cursor', '编程', '代码', 'windsurf'],
-  'AI音频': ['audio', 'music', 'speech', 'tts', 'voice', '音频', '音乐', '语音'],
-  'AI办公': ['office', 'productivity', 'workspace', '办公', '效率', '自动化'],
-  'AI产品': ['product', 'release', 'launch', '发布', '上线', 'update', 'version'],
-  'AI学习资料': ['tutorial', 'course', 'learn', 'guide', '教程', '学习', '入门'],
-  'AI/ML': ['ai', 'ml', 'deep learning', 'machine learning', 'neural', '人工智能', '机器学习', '深度学习'],
-  '开发工具': ['dev', 'tool', 'developer', 'sdk', 'api', '开发', '工具', 'framework'],
-  'IDE': ['ide', 'editor', 'vscode', 'jetbrains', 'intellij', '编辑器'],
-  '开源': ['open source', 'github', '开源', 'repository', 'repo'],
-  '云计算': ['cloud', 'aws', 'azure', 'gcp', 'cloudflare', 'serverless', '云'],
-};
-
-/**
- * 将分类名称规范化到合法枚举值
- */
-function normalizeCategory(category) {
-  if (!category) return 'AI/ML';
-  if (VALID_CATEGORIES.includes(category)) return category;
-
-  // 关键词匹配回退
-  const lower = category.toLowerCase();
-  for (const [cat, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
-    if (keywords.some((kw) => lower.includes(kw))) {
-      return cat;
-    }
-  }
-
-  // 默认归类
-  if (/人工智能|科技|商业|硬件|安全|移动/.test(category)) return 'AI/ML';
-  return 'AI/ML';
-}
-
-/**
  * 按分类分组
  */
 function groupByCategory(items) {
@@ -196,7 +269,10 @@ function generateIndexMarkdown(dailyFiles) {
 
 module.exports = {
   generateDailyJson,
+  generateBasicItems,
+  generateBasicItemsRaw,
   generateDailyMarkdown,
   generateIndexMarkdown,
   normalizeCategory,
+  guessCategoryFromTitle,
 };
